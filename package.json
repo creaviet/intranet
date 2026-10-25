@@ -1,0 +1,42 @@
+{
+  "name": "company-intranet-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "payload": "payload",
+    "generate:types": "payload generate:types",
+    "seed:dev": "node scripts/seed-dev-editor.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "seed:admin": "node scripts/seed-dev-admin.mjs"
+  },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "dependencies": {
+    "@payloadcms/db-mongodb": "3.91.0",
+    "@payloadcms/next": "3.91.0",
+    "@payloadcms/richtext-lexical": "3.91.0",
+    "@measured/puck": "^0.20.2",
+    "next": "~15.4.11",
+    "next-auth": "5.0.0-beta.32",
+    "payload": "3.91.0",
+    "react": "~19.2.1",
+    "react-dom": "~19.2.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "eslint-config-next": "~15.4.11",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
